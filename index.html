@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo Padrão da Mecânica Quântica</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Modelo Padrão</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#particulas">Partículas</a></li>
+                <li><a href="#forcas">Forças</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#modelo3d">Modelo 3D</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio" class="hero" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Bem-vindo ao Universo Quântico</h1>
+            <p>Descubra os mistérios do Modelo Padrão e explore as partículas e forças que regem o cosmos.</p>
+            <button class="explore-btn">Explorar o Invisível</button>
+        </section>
+
+        <section id="particulas" class="content-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2>Partículas Fundamentais</h2>
+            <p>O <strong>Modelo Padrão</strong> é uma das teorias mais elegantes e completas da física moderna. Ele descreve os blocos fundamentais da matéria: <strong>quarks</strong>, <strong>léptons</strong> e <strong>bósons</strong>, que juntos formam o universo visível e invisível.</p>
+            <div class="particle-grid">
+                <div class="particle-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="./assets/Quarks.jpeg" alt="Quarks">
+                    <h3>Quarks</h3>
+                    <p>Partículas que formam prótons e nêutrons. Existem seis tipos: up, down, charm, strange, top e bottom.</p>
+                </div>
+                <div class="particle-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="./assets/léptons.jpg" alt="Léptons">
+                    <h3>Léptons</h3>
+                    <p>Incluem o elétron e seus primos, como o múon e o tau, além dos neutrinos.</p>
+                </div>
+                <div class="particle-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="./assets/Bósons.jpg" alt="Bósons">
+                    <h3>Bósons</h3>
+                    <p>Partículas mediadoras das forças, como o fóton (eletromagnetismo) e o glúon (força forte).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="forcas" class="content-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2>Forças Fundamentais</h2>
+            <p>Quatro forças fundamentais governam as interações do universo: <strong>gravidade</strong>, <strong>eletromagnetismo</strong>, <strong>força nuclear forte</strong> e <strong>força nuclear fraca</strong>. Sem elas, a estrutura do cosmos não existiria como conhecemos.</p>
+            <div class="force-grid">
+                <div class="force-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="./assets/Gravidade.jpeg" alt="Gravidade">
+                    <h3>Gravidade</h3>
+                    <p>A força que nos mantém presos à Terra e governa o movimento dos planetas e galáxias.</p>
+                </div>
+                <div class="force-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="./assets/Eletromagnetismo.jpg" alt="Eletromagnetismo">
+                    <h3>Eletromagnetismo</h3>
+                    <p>Responsável pela luz, eletricidade e magnetismo, mantendo os átomos unidos.</p>
+                </div>
+                <div class="force-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="./assets/Força Nuclear Forte.jpg" alt="Força Nuclear Forte">
+                    <h3>Força Nuclear Forte</h3>
+                    <p>Mantém os núcleos atômicos coesos, superando a repulsão entre prótons.</p>
+                </div>
+                <div class="force-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="./assets/Força Nuclear Fraca.jpg" alt="Força Nuclear Fraca">
+                    <h3>Força Nuclear Fraca</h3>
+                    <p>Responsável por processos como o decaimento beta, essencial para a fusão nuclear no Sol.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experimentos" class="content-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2>Experimentos Quânticos</h2>
+            <p>A mecânica quântica é repleta de experimentos intrigantes que desafiam nossa intuição sobre a realidade. Estes são alguns dos mais fascinantes:</p>
+            <hr>
+            <div class="experiment-grid">
+                <div class="experiment-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="./assets/FendaDupla.jpg" alt="Experimento da Fenda Dupla">
+                    <h3>Experimento da Fenda Dupla</h3>
+                    <p>Mostra como partículas podem se comportar como ondas, interferindo consigo mesmas.</p>
+                    <button class="details-btn" onclick="showExperimentDetails('fenda')">Saiba Mais</button>
+                </div>
+                <div class="experiment-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="./assets/Entrelaçamento Quântico.jpg" alt="Entrelaçamento Quântico">
+                    <h3>Entrelaçamento Quântico</h3>
+                    <p>Partículas podem permanecer conectadas independentemente da distância.</p>
+                    <button class="details-btn" onclick="showExperimentDetails('entrelaçamento')">Saiba Mais</button>
+                </div>
+                <div class="experiment-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="./assets/O Gato de Schrödinger.jpeg" alt="Gato de Schrödinger">
+                    <h3>O Gato de Schrödinger</h3>
+                    <p>Ilustra o conceito de superposição e a incerteza na mecânica quântica.</p>
+                    <button class="details-btn" onclick="showExperimentDetails('schrodinger')">Saiba Mais</button>
+                </div>
+                <div class="experiment-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="./assets/Efeito Túnel Quântico.jpeg" alt="Efeito Túnel Quântico">
+                    <h3>Efeito Túnel Quântico</h3>
+                    <p>Partículas podem atravessar barreiras impossíveis na física clássica.</p>
+                    <button class="details-btn" onclick="showExperimentDetails('tunel')">Saiba Mais</button>
+                </div>
+                <div class="experiment-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                    <img src="./assets/Princípio da Incerteza de Heisenberg.jpeg" alt="Princípio da Incerteza de Heisenberg">
+                    <h3>Princípio da Incerteza</h3>
+                    <p>Não podemos medir simultaneamente a posição e a velocidade exata de uma partícula.</p>
+                    <button class="details-btn" onclick="showExperimentDetails('heisenberg')">Saiba Mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador" class="content-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Simulador de Partículas</h2>
+            <canvas id="particle-canvas"></canvas>
+            <div id="simulator-settings">
+                <label for="gravity">Gravidade:</label>
+                <input type="range" id="gravity" min="0" max="1" step="0.1" value="0.1">
+                <label for="particle-count">Número de Partículas:</label>
+                <input type="number" id="particle-count" min="1" max="100" value="10">
+                <button id="apply-settings">Aplicar</button>
+            </div>
+        </section>
+        
+        <section id="galeria" class="gallery-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2>Galeria de Imagens</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/Forças Fundamentais.jpeg" alt="Forças Fundamentais"></div>
+                    <div class="swiper-slide"><img src="./assets/quantico2.jpeg" alt="Universo Quântico"></div>
+                    <div class="swiper-slide"><img src="./assets/universo quântico.jpeg" alt="Partículas Subatômicas"></div>
+                    <div class="swiper-slide"><img src="./assets/Mecanica Quantica.jpeg" alt="Mecânica Quântica"></div>
+                    <div class="swiper-slide"><img src="./assets/quantico1.jpeg" alt="Colisões de Partículas"></div>
+                    <div class="swiper-slide"><img src="./assets/partículas fundamentais.jpeg" alt="Partículas Fundamentais"></div>
+                    <div class="swiper-slide"><img src="./assets/Universo.jpeg" alt="Universo"></div>
+                    <div class="swiper-slide"><img src="./assets/Vacuo.jpeg" alt="Vácuo Quântico"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="content-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Linha do Tempo da Física Quântica</h2>
+            <p>Explore os marcos mais importantes na história da física quântica.</p>
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h3>1900: Teoria Quântica de Planck</h3>
+                        <p>Max Planck introduz a ideia de que a energia é emitida em pacotes discretos chamados "quanta", marcando o início da teoria quântica.</p>
+                        <button class="details-btn" onclick="showTimelineDetails('planck')">Saiba Mais</button>
+                    </div>
+                    <div class="timeline-icon"><i class="fas fa-atom"></i></div> 
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <h3>1905: Efeito Fotoelétrico de Einstein</h3>
+                        <p>Albert Einstein explica o efeito fotoelétrico, propondo que a luz é composta por partículas chamadas fótons.</p>
+                        <button class="details-btn" onclick="showTimelineDetails('einstein')">Saiba Mais</button>
+                    </div>
+                    <div class="timeline-icon"><i class="fas fa-lightbulb"></i></div> 
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="timeline-content">
+                        <h3>1927: Princípio da Incerteza de Heisenberg</h3>
+                        <p>Werner Heisenberg formula o princípio da incerteza, que estabelece que não podemos medir simultaneamente a posição e o momento de uma partícula com precisão absoluta.</p>
+                        <button class="details-btn" onclick="showTimelineDetails('heisenberg')">Saiba Mais</button>
+                    </div>
+                    <div class="timeline-icon"><i class="fas fa-bullseye"></i></div> 
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="timeline-content">
+                        <h3>1935: Entrelaçamento Quântico</h3>
+                        <p>Albert Einstein, Boris Podolsky e Nathan Rosen propõem o paradoxo EPR, questionando a completude da mecânica quântica. Isso levou ao conceito de entrelaçamento quântico.</p>
+                        <button class="details-btn" onclick="showTimelineDetails('entrelacamento')">Saiba Mais</button>
+                    </div>
+                    <div class="timeline-icon"><i class="fas fa-link"></i></div> 
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="timeline-content">
+                        <h3>1964: Teorema de Bell</h3>
+                        <p>John Bell propõe um teorema que permite testar experimentalmente o entrelaçamento quântico, confirmando a não-localidade da mecânica quântica.</p>
+                        <button class="details-btn" onclick="showTimelineDetails('bell')">Saiba Mais</button>
+                    </div>
+                    <div class="timeline-icon"><i class="fas fa-microscope"></i></div> 
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="timeline-content">
+                        <h3>2012: Bóson de Higgs</h3>
+                        <p>O CERN anuncia a descoberta do bóson de Higgs, uma partícula fundamental para explicar a origem da massa das partículas.</p>
+                        <button class="details-btn" onclick="showTimelineDetails('higgs')">Saiba Mais</button>
+                    </div>
+                    <div class="timeline-icon"><i class="fas fa-rocket"></i></div> 
+                </div>
+            </div>
+        </section>
+    
+        <section id="modelo3d" class="content-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="preview-3d" data-aos="zoom-in-left" data-aos-delay="500">
+                <h2>Aprenda em 3D</h2>
+                <button onclick="window.location.href='./3D/examples/webgpu_tsl_compute_attractors_particles.html'">Ver em 3D</button>
+            </div>
+        </section>
+    </main>
+
+    <section id="faq" class="faq-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-container">
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <h3>O que é a mecânica quântica?</h3>
+                <p>A mecânica quântica é a área da física que estuda os fenômenos que ocorrem em escalas microscópicas, como partículas subatômicas.</p>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h3>O que significa superposição quântica?</h3>
+                <p>Superposição é o princípio onde uma partícula pode existir em múltiplos estados ao mesmo tempo até ser observada.</p>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <h3>O que é o princípio da incerteza?</h3>
+                <p>É a ideia de que não podemos medir simultaneamente a posição e a velocidade exatas de uma partícula com precisão infinita.</p>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top" title="Voltar ao topo">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Modelo Padrão da Mecânica Quântica. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+        window.onscroll = function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+};
+
+document.getElementById('back-to-top').onclick = function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+};
+    </script>
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>
+        function showExperimentDetails(experiment) {
+    let details = {
+        "fenda": {
+            title: "Experimento da Fenda Dupla",
+            text: "O Experimento da Fenda Dupla revelou a dualidade onda-partícula. Se um elétron for disparado contra duas fendas sem ser observado, ele formará um padrão de interferência, como se tivesse passado pelas duas fendas simultaneamente.",
+            imageUrl: "./assets/FendaDupla.jpg"
+        },
+        "entrelaçamento": {
+            title: "Entrelaçamento Quântico",
+            text: "O Entrelaçamento Quântico mostra que duas partículas podem compartilhar um estado único, independentemente da distância. Uma mudança no estado de uma afeta instantaneamente a outra.",
+            imageUrl: "./assets/Entrelaçamento Quântico.jpg"
+        },
+        "schrodinger": {
+            title: "O Gato de Schrödinger",
+            text: "O Gato de Schrödinger é um experimento mental proposto para ilustrar como a mecânica quântica pode criar situações paradoxais em que um sistema pode estar em dois estados ao mesmo tempo até ser medido.",
+            imageUrl: "./assets/O Gato de Schrödinger.jpeg"
+        },
+        "tunel": {
+            title: "Efeito Túnel Quântico",
+            text: "O Efeito Túnel permite que partículas ultrapassem barreiras de energia que, segundo a física clássica, seriam intransponíveis. Esse fenômeno é usado em dispositivos como o microscópio de tunelamento eletrônico.",
+            imageUrl: "./assets/Efeito Túnel Quântico.jpeg"
+        },
+        "heisenberg": {
+            title: "Princípio da Incerteza",
+            text: "O Princípio da Incerteza de Heisenberg estabelece que há um limite fundamental para a precisão com que podemos medir simultaneamente a posição e a velocidade de uma partícula.",
+            imageUrl: "./assets/Princípio da Incerteza de Heisenberg.jpeg"
+        }
+    };
+
+    let exp = details[experiment];
+
+    if (exp) {
+        Swal.fire({
+            title: exp.title,
+            text: exp.text,
+            imageUrl: exp.imageUrl,
+            imageWidth: 400,
+            imageAlt: exp.title,
+            confirmButtonText: "Entendi!",
+            confirmButtonColor: "#3085d6",
+            background: "#1e1e1e",
+            color: "#fff"
+        });
+    }
+}
+
+    </script>
+
+    <script>
+ const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth * 0.8;
+canvas.height = 400;
+
+class Particle {
+    constructor(x, y, radius, color, velocity) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color = color;
+        this.velocity = velocity;
+        this.mass = 1;
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+
+    update(particles) {
+        this.draw();
+
+        this.velocity.y += 0.1;
+
+        if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+            this.velocity.x = -this.velocity.x;
+        }
+
+        if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+            this.velocity.y = -this.velocity.y;
+        }
+
+        this.x += this.velocity.x;
+        this.y += this.velocity.y;
+
+        for (let i = 0; i < particles.length; i++) {
+            if (this === particles[i]) continue;
+
+            if (getDistance(this.x, this.y, particles[i].x, particles[i].y) - this.radius * 2 < 0) {
+                resolveCollision(this, particles[i]);
+            }
+        }
+    }
+}
+
+function getDistance(x1, y1, x2, y2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+}
+
+function resolveCollision(particle1, particle2) {
+    const xVelocityDiff = particle1.velocity.x - particle2.velocity.x;
+    const yVelocityDiff = particle1.velocity.y - particle2.velocity.y;
+
+    const xDist = particle2.x - particle1.x;
+    const yDist = particle2.y - particle1.y;
+
+    if (xVelocityDiff * xDist + yVelocityDiff * yDist >= 0) {
+        const angle = -Math.atan2(particle2.y - particle1.y, particle2.x - particle1.x);
+
+        const m1 = particle1.mass;
+        const m2 = particle2.mass;
+
+        const u1 = rotate({ x: particle1.velocity.x, y: particle1.velocity.y }, angle);
+        const u2 = rotate({ x: particle2.velocity.x, y: particle2.velocity.y }, angle);
+
+        const v1 = { x: u1.x * (m1 - m2) / (m1 + m2) + u2.x * 2 * m2 / (m1 + m2), y: u1.y };
+        const v2 = { x: u2.x * (m1 - m2) / (m1 + m2) + u1.x * 2 * m1 / (m1 + m2), y: u2.y };
+
+        const vFinal1 = rotate(v1, -angle);
+        const vFinal2 = rotate(v2, -angle);
+
+        particle1.velocity.x = vFinal1.x;
+        particle1.velocity.y = vFinal1.y;
+
+        particle2.velocity.x = vFinal2.x;
+        particle2.velocity.y = vFinal2.y;
+    }
+}
+
+function rotate(velocity, angle) {
+    const rotatedVelocities = {
+        x: velocity.x * Math.cos(angle) - velocity.y * Math.sin(angle),
+        y: velocity.x * Math.sin(angle) + velocity.y * Math.cos(angle)
+    };
+    return rotatedVelocities;
+}
+
+const particles = [];
+function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(particle => particle.update(particles));
+}
+
+canvas.addEventListener('click', (event) => {
+    const x = event.offsetX;
+    const y = event.offsetY;
+    const radius = Math.random() * 10 + 5;
+    const color = `hsl(${Math.random() * 360}, 50%, 50%)`;
+    const velocity = {
+        x: (Math.random() - 0.5) * 2,
+        y: (Math.random() - 0.5) * 2
+    };
+    particles.push(new Particle(x, y, radius, color, velocity));
+});
+
+animate();
+    </script>
+
+    <script>
+        const gravityInput = document.getElementById('gravity');
+const particleCountInput = document.getElementById('particle-count');
+const applySettingsButton = document.getElementById('apply-settings');
+
+applySettingsButton.addEventListener('click', () => {
+    const gravity = parseFloat(gravityInput.value);
+    const particleCount = parseInt(particleCountInput.value);
+
+    particles.length = 0; 
+
+    for (let i = 0; i < particleCount; i++) {
+        const radius = Math.random() * 10 + 5;
+        const x = Math.random() * (canvas.width - radius * 2) + radius;
+        const y = Math.random() * (canvas.height - radius * 2) + radius;
+        const color = `hsl(${Math.random() * 360}, 50%, 50%)`;
+        const velocity = {
+            x: (Math.random() - 0.5) * 2,
+            y: (Math.random() - 0.5) * 2
+        };
+        particles.push(new Particle(x, y, radius, color, velocity));
+    }
+
+    particles.forEach(particle => {
+        particle.velocity.y += gravity;
+    });
+});
+    </script>
+
+    <script>
+        function showTimelineDetails(event) {
+    const details = {
+        "planck": {
+            title: "Teoria Quântica de Planck",
+            text: "Max Planck propôs que a energia é emitida em pacotes discretos chamados 'quanta'. Isso resolveu o problema da radiação do corpo negro e deu início à teoria quântica.",
+            imageUrl: "./assets/planck.jpg"
+        },
+        "einstein": {
+            title: "Efeito Fotoelétrico",
+            text: "Albert Einstein explicou o efeito fotoelétrico, mostrando que a luz pode se comportar como partículas (fótons). Isso lhe rendeu o Prêmio Nobel de Física em 1921.",
+            imageUrl: "./assets/einstein.jpg"
+        },
+        "heisenberg": {
+            title: "Princípio da Incerteza",
+            text: "Heisenberg mostrou que é impossível medir simultaneamente a posição e o momento de uma partícula com precisão absoluta. Isso é fundamental para a mecânica quântica.",
+            imageUrl: "./assets/heisenberg.jpg"
+        },
+        "entrelacamento": {
+            title: "Entrelaçamento Quântico",
+            text: "O paradoxo EPR proposto por Einstein, Podolsky e Rosen levou ao conceito de entrelaçamento quântico, onde partículas podem estar correlacionadas independentemente da distância.",
+            imageUrl: "./assets/entrelacamento.jpg"
+        },
+        "bell": {
+            title: "Teorema de Bell",
+            text: "John Bell propôs um teorema que permite testar experimentalmente o entrelaçamento quântico, confirmando a não-localidade da mecânica quântica.",
+            imageUrl: "./assets/bell.jpg"
+        },
+        "higgs": {
+            title: "Bóson de Higgs",
+            text: "A descoberta do bóson de Higgs no CERN em 2012 confirmou a existência do campo de Higgs, que dá massa às partículas elementares.",
+            imageUrl: "./assets/higgs.jpg"
+        }
+    };
+
+    const detail = details[event];
+    if (detail) {
+        Swal.fire({
+            title: detail.title,
+            text: detail.text,
+            imageUrl: detail.imageUrl,
+            imageWidth: 400,
+            imageAlt: detail.title,
+            confirmButtonText: "Fechar",
+            confirmButtonColor: "#007bff",
+            background: "#f9f9f9",
+            color: "#333"
+        });
+    }
+}
+    </script>
+</body>
+</html>
