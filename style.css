@@ -777,3 +777,71 @@ footer {
         transform: translateX(0);
     }
 }
+
+#origem-quantica {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c4c);
+    color: #fff;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.origem-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.origem-texto {
+    flex: 1;
+}
+
+.origem-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.origem-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.origem-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.origem-imagem img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.legenda-imagem {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .origem-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .origem-texto h2 {
+        font-size: 2rem;
+    }
+
+    .origem-texto p {
+        font-size: 1rem;
+    }
+}
